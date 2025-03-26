@@ -5,9 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chill</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-    <link rel="stylesheet" href="styles/login.css" />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <h1>Login Page</h1>
+    <section class="login-form">
+      <img class="logo" src="images/Logo.png" alt="logo chill" />
+      <h3>Masuk</h3>
+      <p>Selamat Datang Kembali</p>
+      <form action="">
+        <div class="username">
+          <label for="">Username</label>
+          <input type="text" placeholder="Masukan username" />
+        </div>
+        <div class="password">
+          <label for="">Kata Sandi</label>
+          <input type="password" placeholder="Masukan kata sandi" />
+        </div>
+        <div class="register">
+          <p>Belum punya akun? <a href="/register.html"> Daftar</a></p>
+          <p><a href="#">Lupa kata sandi?</a></p>
+        </div>
+        <div class="btn">
+          <button
+            class="btn-masuk"
+            onclick="location.href='/home.html'"
+            type="button"
+          >
+            Masuk
+          </button>
+          <p>Atau</p>
+          <button>
+            <img src="images/Logo-Google.png" alt="" /><span
+              >Masuk dengan Google</span
+            >
+          </button>
+        </div>
+      </form>
+    </section>
   </body>
 </html>
